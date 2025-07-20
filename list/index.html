@@ -7,23 +7,23 @@
         <link rel="stylesheet" href="style.css">
         <meta
             name="keywords"
-            content="AnotherFlagDex, AnotherFlagsDex, DynastyDex, Discord, Identifier, Utilities, Rarity, Flag Identification, Flag Symbols" />
+            content="Balldex, Ballsdex, DynastyDex, Empireballs, HistoryDex, Discord, Identifier, Utilities, Rarity, Ball Identification, Ball Art, Ball Symbols, Spawn Arts" />
         <meta
             name="description"
-            content="List of all AnotherFlagsDex flag arts." />
-        <meta content="Flag Identifier - Spawn Arts List"
+            content="List of all Ballsdex/DynastyDex/Empireballs/HistoryDex spawn arts along with previous ones (for Ballsdex only)." />
+        <meta content="Ball Identifier - Spawn Arts List"
             property="og:title" />
         <meta
             content="List of all Ballsdex/DynastyDex/Empireballs/HistoryDex spawn arts along with previous ones (for Ballsdex only)."
             property="og:description" />
-        <meta content="https://aflagsdentifier.netlify.app/list" property="og:url" />
-        <meta content="https://aflagsdentifier.netlify.app/assets/icons/AnotherFlagsDex.webp"
+        <meta content="https://ballidentifier.xyz/list" property="og:url" />
+        <meta content="https://ballidentifier.xyz/assets/icons/Ballsdex.png"
             property="og:image" />
         <meta content="#A94DC1" name="theme-color" />
-        <title>Flag Identifier - Spawn Arts List</title>
+        <title>Ball Identifier - Spawn Arts List</title>
     </head>
     <body>
-        <h1>Flag Arts</h1>
+        <h1>Spawn Arts</h1>
         <div id="sticky-header">
             <button id="back-button" title="Go back to Identificator">←</button>
             <div id="cache-info">
@@ -60,12 +60,20 @@
                     <label class="toggle-switch">
                         <span>On Click</span>
                         <select id="on-click-action">
+                            <option value="previous-arts" selected>Show previous
+                                arts</option>
                             <option value="enlarge-art">Enlarge spawn
                                 art</option>
                         </select>
                     </label>
                 </div>
             </div>
+            <select id="dexSelector" class="dex-selector">
+                <option value="Ballsdex" selected>Ballsdex</option>
+                <option value="DynastyDex">DynastyDex</option>
+                <option value="Empireballs">Empireballs</option>
+                <option value="HistoryDex">HistoryDex</option>
+            </select>
             <select id="sort-options">
                 <option value="rarity">Rarity</option>
                 <option value="a-z">A-Z</option>
