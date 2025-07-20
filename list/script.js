@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadSettings();
     document.getElementById("sort-options").value = "rarity";
     document.getElementById("search-bar").value = "";
-    document.getElementById("dexSelector").value = "Ballsdex";
     loadDexData("Ballsdex");
 
     document.addEventListener("keydown", function (event) {
@@ -18,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dexSelector = document.getElementById("dexSelector");
 
-    function loadDexData(dexName) {
-        const jsonFile = `../assets/jsons/${dexName}.json`;
+    function loadDexData(Ballsdex) {
+        const jsonFile = `../assets/jsons/Ballsdex.json`;
 
         fetch(jsonFile)
             .then((response) => response.json())
