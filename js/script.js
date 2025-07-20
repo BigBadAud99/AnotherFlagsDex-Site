@@ -374,9 +374,9 @@ function handleFileUpload(file) {
 }
 
 document.getElementById("spawnArtsButton").addEventListener("click", function () {
-    window.open(`https://ballidentifier.xyz/list`, "_blank");
+    window.open(`https://aflagsdentifier.netlify.app/list`, "_blank");
 });
 
 document.getElementById("discordBotButton").addEventListener("click", function () {
-    window.open(`https://ballidentifier.xyz/bot`, "_blank");
+    window.open(`https://aflagsdentifier.netlify.app/bot`, "_blank");
 });
