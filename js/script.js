@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("dexSelector").value = "Ballsdex";
+    document.getElementById("dexSelector").value = "AnotherFlagsDex";
     updateTitleWithBallCount();
 });
 
