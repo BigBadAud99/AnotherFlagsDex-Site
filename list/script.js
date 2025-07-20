@@ -77,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         nameElement.textContent = name;
                         ballDiv.appendChild(nameElement);
 
+                        const imgElement = document.createElement("img");
+                        imgElement.src = `../assets/compressed/${dexName}/${name}.webp`;
+                        imgElement.alt = name;
+
                         const imgPromise = new Promise((resolve, reject) => {
                             imgElement.onload = () => {
                                 loadedImages++;
