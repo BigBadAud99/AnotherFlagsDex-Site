@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     loadSettings();
     document.getElementById("sort-options").value = "rarity";
     document.getElementById("search-bar").value = "";
-    document.getElementById("dexSelector").value = "Ballsdex";
-    loadDexData("Ballsdex");
+    document.getElementById("dexSelector").value = "AnotherFlagsDex";
+    loadDexData("AnotherFlagsDex");
 
     document.addEventListener("keydown", function (event) {
         if (event.shiftKey && !event.ctrlKey && event.key.toLowerCase() === "f") {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         };
                         const waveColor = waveColors[details.wave] || "#808080";
 
-                        if (["Ballsdex", "DynastyDex", "Empireballs"].includes(dexName)) {
+                        if (["Ballsdex", "DynastyDex", "Empireballs", "AnotherFlagsDex"].includes(dexName)) {
 
                             const idElement = document.createElement("div");
                             idElement.className = "id-indicator";
