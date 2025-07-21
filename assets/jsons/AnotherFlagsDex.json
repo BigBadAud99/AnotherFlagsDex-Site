@@ -4,5 +4,26 @@
        "artist": "GHOST_M",
        "wave": 5,
        "id": 36
+     },
+
+     "Neo-Nazi (Last Era)": {
+     "rarity": 2,
+     "artist": "GHOST_M",
+     "wave": 3,
+     "id": 39
+     },
+
+     "Neo-Nazi (Second Era)": {
+     "rarity": 3,
+     "artist" "GHOST_M",
+     "wave": 2,
+     "id": 38
+     },
+
+     "Neo-Nazi (First Era)": {
+     "rarity": 4,
+     "artist": "GHOST_M",
+     "wave": 1,
+     "id" 37
      }
 }
