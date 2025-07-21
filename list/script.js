@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             ballDiv.appendChild(idElement);
                         }
 
-                        if (dexName === "Ballsdex", "AnotherFlagsDex") {
+                        if (dexName === "AnotherFlagsDex") {
                             const waveElement = document.createElement("div");
                             waveElement.className = "wave-indicator";
                             waveElement.textContent = details.wave;
