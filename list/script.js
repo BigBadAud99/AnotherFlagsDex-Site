@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             ballDiv.appendChild(idElement);
                         }
 
-                        if (dexName === "Ballsdex") {
+                        if (dexName === "Ballsdex", "AnotherFlagsDex") {
                             const waveElement = document.createElement("div");
                             waveElement.className = "wave-indicator";
                             waveElement.textContent = details.wave;
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         ballDiv.appendChild(nameElement);
 
                         const imgElement = document.createElement("img");
-                        imgElement.src = `../assets/compressed/${dexName}/${name}.png`;
+                        imgElement.src = `../assets/compressed/${dexName}/${ballName}.png`;
                         imgElement.alt = name;
 
                         const imgPromise = new Promise((resolve, reject) => {
