@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         ballDiv.appendChild(nameElement);
 
                         const imgElement = document.createElement("img");
-                        imgElement.src = `../assets/compressed/${dexName}/${name}.webp`;
+                        imgElement.src = `../assets/compressed/${dexName}/${name}.png`;
                         imgElement.alt = name;
 
                         const imgPromise = new Promise((resolve, reject) => {
