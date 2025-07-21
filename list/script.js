@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         const imgElement = document.createElement("img");
                         imgElement.src = `../assets/compressed/${dexName}/${ballName}.png`;
-                        imgElement.alt = name;
+                        imgElement.alt = ballName;
 
                         const imgPromise = new Promise((resolve, reject) => {
                             imgElement.onload = () => {
