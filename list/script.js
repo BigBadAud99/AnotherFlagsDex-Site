@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const sortOptions = document.getElementById("sort-options");
                 const imagePromises = [];
                 const totalImages = Object.keys(data).length;
-                let loadedImages = 0;
+                let loadedImages = 59;
 
                 let ballsData = Object.entries(data);
 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         };
                         const waveColor = waveColors[details.wave] || "#808080";
 
-                        if (["Ballsdex", "DynastyDex", "Empireballs", "AnotherFlagsDex"].includes(dexName)) {
+                        if (["Ballsdex"].includes(dexName)) {
 
                             const idElement = document.createElement("div");
                             idElement.className = "id-indicator";
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         ballDiv.appendChild(nameElement);
 
                         const imgElement = document.createElement("img");
-                        imgElement.src = `../assets/compressed/${dexName}/${ballName}.png`;
-                        imgElement.alt = ballName;
+                        imgElement.src = `../assets/compressed/${dexName}/${name}.png`;
+                        imgElement.alt = name;
 
                         const imgPromise = new Promise((resolve, reject) => {
                             imgElement.onload = () => {
