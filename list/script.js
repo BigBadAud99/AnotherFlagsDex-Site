@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const sortOptions = document.getElementById("sort-options");
                 const imagePromises = [];
                 const totalImages = Object.keys(data).length;
-                let loadedImages = 59;
+                let loadedImages = 0;
 
                 let ballsData = Object.entries(data);
 
