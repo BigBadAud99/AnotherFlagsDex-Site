@@ -53,5 +53,54 @@
      "artist": "GHOST_M",
      "wave": 7,
      "id": 18
+     },
+
+     "New Galactican Republic of Thussodonia": {
+     "rarity": 9,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 35
+     },
+
+     "Chesterin Pact": {
+     "rarity": 10,
+     "artist": "GHOST_M"
+     "wave": 7,
+     "id": 15
+     },
+
+     "Weimar Reich Republic": {
+     "rarity": 11,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 58
+     },
+
+     "The Grand Polish Empire": {
+     "rarity": 12,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 59
+     },
+
+     "Galactic Empire of Thussodonia Order": {
+     "rarity": 13,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 33
+     },
+
+     "Galactic Republic of Thussodonia": {
+     "rarity": 14,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 34
+     },
+
+     "The Imperialism of Ottoman": {
+     "rarity": 15,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 56
      }
 }
