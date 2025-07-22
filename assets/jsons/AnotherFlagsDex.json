@@ -25,5 +25,33 @@
      "artist": "GHOST_M",
      "wave": 1,
      "id": 37
+     },
+
+     "Doping Empire": {
+     "rarity": 5,
+     "artist": "GHOST_M",
+     "wave": 3,
+     "id": 42
+     },
+
+     "Odollianzyth Empire": {
+     "rarity": 6,
+     "artist": "GHOST_M",
+     "wave": 6,
+     "id": 41
+     },
+
+     "The Holy Byzantium Empire": {
+     "rarity": 7,
+     "artist": "GHOST_M",
+     "wave": 6,
+     "id": 54
+     },
+
+     "Grand Holy Romanum Empire": {
+     "rarity": 8,
+     "artist": "GHOST_M",
+     "wave": 7,
+     "id": 18
      }
 }
