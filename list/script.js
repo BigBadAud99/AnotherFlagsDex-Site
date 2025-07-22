@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         };
                         const waveColor = waveColors[details.wave] || "#808080";
 
-                        if (["Ballsdex"].includes(dexName)) {
+                        if (["Ballsdex", "AnotherFlagsDex"].includes(dexName)) {
 
                             const idElement = document.createElement("div");
                             idElement.className = "id-indicator";
