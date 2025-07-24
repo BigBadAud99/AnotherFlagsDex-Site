@@ -374,9 +374,9 @@ function handleFileUpload(file) {
 }
 
 document.getElementById("spawnArtsButton").addEventListener("click", function () {
-    window.location.href = "https://aflagsdentifier.netlify.app/list";
+    window.open(`https://aflagsdentifier.netlify.app/list`, "_blank");
 });
 
 document.getElementById("discordBotButton").addEventListener("click", function () {
-    window.location.href = "https://aflagsdentifier.netlify.app/bot";
+    window.open(`https://aflagsdentifier.netlify.app/bot`, "_blank");
 });
