@@ -5,31 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="keywords"
-            content="AnotherFlagDex, AnotherFlagsDex, Discord, Identifier, Utilities, Rarity, Flag Identification, Flag Symbols"
+            content="Balldex, Ballsdex, DynastyDex, Empireballs, HistoryDex, Discord, Identifier, Utilities, Rarity, Ball Identification, Ball Art, Ball Symbols, Spawn Arts"
         />
         <meta
             name="description"
-            content="Identify flags by uploading/pasting an image and get the result!"
+            content="Identify balls by uploading/pasting an image and get the result! Actually supports Ballsdex, DynastyDex, Empireballs and HistoryDex."
         />
-        <meta content="Flag Identifier - Recognize the flag in a second!" property="og:title" />
+        <meta content="Ball Identifier - Recognize the ball in a second!" property="og:title" />
         <meta
-            content="Identify balls by uploading/pasting an image and get the result!"
+            content="Identify balls by uploading/pasting an image and get the result! Actually supports Ballsdex, DynastyDex, Empireballs and HistoryDex."
             property="og:description"
         />
-        <meta content="https://aflagsdentifier.netlify.app/" property="og:url" />
-        <meta content="https://aflagsdentifier.netlify.app/assets/icons/AnotherFlagsDex.webp" property="og:image" />
+        <meta content="https://ballidentifier.xyz/" property="og:url" />
+        <meta content="https://ballidentifier.xyz/assets/icons/Ballsdex.png" property="og:image" />
         <meta content="#A94DC1" name="theme-color" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="icon" href="assets/icons/icon.webp" type="image/png" />
-        <title>Flag Identifier - Recognize the ball in a second!</title>
+        <link rel="icon" href="assets/icons/web_icon.png" type="image/png" />
+        <title>Flag Identifier - Recognize the flag in a second!</title>
     </head>
     <body>
         <div id="overlay" class="overlay"></div>
-        <a href="https://aflagsdentifier.netlify.app/list"> <button class="spawn-arts-button">Spawn Arts List</button> </a>
+        <button id="spawnArtsButton" class="spawn-arts-button">Flag Arts List</button>
         <div class="container">
-            <img src="assets/icons/AnotherFlagsDex.webp" alt="Logo" class="logo" />
+            <img src="assets/icons/AnotherFlagsDex.png" alt="Logo" class="logo" />
             <div class="title-container">
-                <h1 id="title" class="title">AnotherFlagsDex Identifier</h1>
+                <select id="dexSelector" class="dex-selector">
+                    <option value="AnotherFlagsDex">AnotherFlagsDex</option>
+                </select>
+                <h1 id="title" class="title">Identifier</h1>
             </div>
             <p class="subtitle">
                 <strong>Upload</strong>, <strong>drag and drop</strong> or <strong>paste</strong> the image file/discord URL.
@@ -79,7 +82,7 @@
         </div>
         <footer class="footer">
             <p>AnotherFlagsDex version by Dittor67</p>
-            <p>Original is made with ❤️ by <a href="https://discord.com/users/334411435633541121" target="_blank">@meffiu</a></p>
+            <p>Made with ❤️ by <a href="https://discord.com/users/334411435633541121" target="_blank">@meffiu</a></p>
             <p class="small-text">
                 Not affiliated with
                 <a href="https://github.com/Ballsdex-Team/BallsDex-DiscordBot" target="_blank"
@@ -87,6 +90,6 @@
                 >
             </p>
         </footer>
-        <script src="../js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
