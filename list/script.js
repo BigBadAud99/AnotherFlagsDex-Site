@@ -65,6 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
                             ballDiv.appendChild(idElement);
                         }
 
+                        if (dexName === "Ballsdex") {
+                            const waveElement = document.createElement("div");
+                            waveElement.className = "wave-indicator";
+                            waveElement.textContent = details.wave;
+                            waveElement.title = `Wave: ${details.wave}`;
+                            waveElement.style.backgroundColor = waveColor;
+                            ballDiv.appendChild(waveElement);
+                        }
+
                         const nameElement = document.createElement("h2");
                         nameElement.textContent = name;
                         ballDiv.appendChild(nameElement);
@@ -127,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             document.getElementById("search-bar").value.toLowerCase()
                         );
                     });
+                    document.getElementById("toggle-wave").dispatchEvent(new Event("change"));
                     document.getElementById("toggle-rarity").dispatchEvent(new Event("change"));
                     document.getElementById("toggle-artist").dispatchEvent(new Event("change"));
                     document.getElementById("toggle-id").dispatchEvent(new Event("change"));
@@ -144,6 +154,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         });
                     } else if (sortBy === "a-z") {
                         ballsData.sort((a, b) => a[0].localeCompare(b[0]));
+                    } else if (sortBy === "wave") {
+                        ballsData.sort((a, b) => {
+                            if (a[1].wave === b[1].wave) {
+                                return a[0].localeCompare(b[0]);
+                            }
+                            return a[1].wave - b[1].wave;
+                        });
                     } else if (sortBy === "id") {
                         ballsData.sort((a, b) => {
                             return a[1].id - b[1].id;
@@ -166,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dexSelector.addEventListener("change", function () {
         const selectedDex = dexSelector.value;
         const sortOptions = document.getElementById("sort-options");
+        const waveOption = sortOptions.querySelector('option[value="wave"]');
         const idOption = sortOptions.querySelector('option[value="id"]');
         const onClickAction = document.getElementById("on-click-action");
 
@@ -179,10 +197,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 onClickAction.querySelector('option[value="previous-arts"]').disabled = true;
                 onClickAction.value = "enlarge-art";
                 idOption.style.display = "block";
+                waveOption.style.display = "none";
+                if (sortOptions.value === "wave") {
+                    sortOptions.value = "rarity";
+                }
                 break;
             default:
                 onClickAction.querySelector('option[value="previous-arts"]').disabled = true;
                 onClickAction.value = "enlarge-art";
+                waveOption.style.display = "none";
                 idOption.style.display = "none";
                 if (sortOptions.value === "wave" || sortOptions.value === "id") {
                     sortOptions.value = "rarity";
