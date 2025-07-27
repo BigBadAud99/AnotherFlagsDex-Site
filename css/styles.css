@@ -96,7 +96,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #4f166b;
+    background-color: #ae0dff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -108,7 +108,7 @@ body {
 }
 
 .custom-upload-button:hover {
-    background-color: #1565c0;
+    background-color: #4f166b;
 }
 
 .upload-input {
@@ -225,7 +225,7 @@ body {
     font-size: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    background-color: #1e88e5;
+    background-color: #ae0dff;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
@@ -233,8 +233,8 @@ body {
 }
 
 .dex-selector:hover {
-    background-color: #1565c0;
-    border-color: #1565c0;
+    background-color: #4f166b;
+    border-color: #4f166b;
 }
 
 .changelog-button {
@@ -243,7 +243,7 @@ body {
     right: 10px;
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #4f166b;
+    background-color: #ae0dff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -252,7 +252,7 @@ body {
 }
 
 .changelog-button:hover {
-    background-color: #1565c0;
+    background-color: #4f166b;
 }
 
 .changelog-modal {
@@ -330,7 +330,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #1e88e5;
+    background-color: #ae0dff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -339,7 +339,7 @@ body {
 }
 
 .copy-btn:hover {
-    background-color: #1565c0;
+    background-color: #4f166b;
 }
 
 .footer {
@@ -419,7 +419,7 @@ body.dragging .container {
     left: 10px;
     padding: 5px 10px;
     font-size: 12px;
-    background-color: #1e88e5;
+    background-color: #ae0dff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -438,7 +438,7 @@ body.dragging .container {
     left: 130px;
     padding: 5px 10px;
     font-size: 12px;
-    background-color: #1e88e5;
+    background-color: #ae0dff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -448,5 +448,5 @@ body.dragging .container {
 }
 
 .discord-bot-button:hover {
-    background-color: #1565c0;
+    background-color: #4f166b;
 }
